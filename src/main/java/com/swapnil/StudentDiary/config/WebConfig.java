@@ -1,4 +1,4 @@
-package com.swapnil.PetCare_System.config;
+package com.swapnil.StudentDiary.config;
 
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;

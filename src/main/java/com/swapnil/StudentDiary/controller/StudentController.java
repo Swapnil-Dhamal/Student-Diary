@@ -1,9 +1,8 @@
-package com.swapnil.PetCare_System.controller;
+package com.swapnil.StudentDiary.controller;
 
 
-import com.swapnil.PetCare_System.model.Student;
-import com.swapnil.PetCare_System.service.StudentService;
-import lombok.RequiredArgsConstructor;
+import com.swapnil.StudentDiary.model.Student;
+import com.swapnil.StudentDiary.service.StudentService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;

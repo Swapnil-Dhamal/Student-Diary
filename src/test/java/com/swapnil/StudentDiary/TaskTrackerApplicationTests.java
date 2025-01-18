@@ -1,10 +1,10 @@
-package com.swapnil.PetCare_System;
+package com.swapnil.StudentDiary;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class PetCareSystemApplicationTests {
+class TaskTrackerApplicationTests {
 
 	@Test
 	void contextLoads() {

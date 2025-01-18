@@ -1,6 +1,6 @@
-package com.swapnil.PetCare_System.repo;
+package com.swapnil.StudentDiary.repo;
 
-import com.swapnil.PetCare_System.model.Student;
+import com.swapnil.StudentDiary.model.Student;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

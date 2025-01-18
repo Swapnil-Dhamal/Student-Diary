@@ -5,7 +5,7 @@ const NavBar=()=>{
     return (
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark mb-5">
         <Link className="navbar-brand" to={"/"}>
-          Demo
+          Student Diary
         </Link>
         <button
           className="navbar-toggler"

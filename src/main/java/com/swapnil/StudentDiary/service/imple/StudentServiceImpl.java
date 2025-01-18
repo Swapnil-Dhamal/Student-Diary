@@ -1,9 +1,8 @@
-package com.swapnil.PetCare_System.service.imple;
+package com.swapnil.StudentDiary.service.imple;
 
-import com.swapnil.PetCare_System.model.Student;
-import com.swapnil.PetCare_System.repo.StudentRepo;
-import com.swapnil.PetCare_System.service.StudentService;
-import lombok.RequiredArgsConstructor;
+import com.swapnil.StudentDiary.model.Student;
+import com.swapnil.StudentDiary.repo.StudentRepo;
+import com.swapnil.StudentDiary.service.StudentService;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

@@ -1,11 +1,9 @@
-package com.swapnil.PetCare_System.model;
+package com.swapnil.StudentDiary.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-
-import org.hibernate.annotations.NaturalId;
 
 
 @Entity

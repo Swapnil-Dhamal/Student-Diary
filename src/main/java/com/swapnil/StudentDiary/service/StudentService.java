@@ -1,6 +1,6 @@
-package com.swapnil.PetCare_System.service;
+package com.swapnil.StudentDiary.service;
 
-import com.swapnil.PetCare_System.model.Student;
+import com.swapnil.StudentDiary.model.Student;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

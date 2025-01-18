@@ -1,13 +1,13 @@
-package com.swapnil.PetCare_System;
+package com.swapnil.StudentDiary;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class PetCareSystemApplication {
+public class StudentDiaryApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(PetCareSystemApplication.class, args);
+		SpringApplication.run(StudentDiaryApplication.class, args);
 	}
 
 }
