@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+    <script src="https://cdn.jsdelivr.net/npm/sockjs-client/dist/sockjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/stompjs/lib/stomp.min.js"></script>
+
+  </head>
+  <body>
+    <h1>Notifications</h1>
+    <div id="notifications"></div>
+
+    <script type="text/javascript">
+      // Connect to the WebSocket endpoint using SockJS
+      var socket = new SockJS('http://localhost:8080/ws');
+        var stompClient = Stomp.over(socket);
+  
+      // Connect to the server
+      stompClient.connect({}, function (frame) {
+          console.log('Connected: ' + frame);
+  
+          // Subscribe to the notifications topic
+          stompClient.subscribe('/topic/notifications', function (message) {
+              // Display the received notification message
+              var messageContent = message.body;
+              <!-- console.log(messageContent); -->
+              var notificationsDiv = document.getElementById('notifications');
+              notificationsDiv.innerHTML += '<p>' + messageContent + '</p>';
+          });
+      });
+  
+      // You can call any logic here if needed to auto-reconnect or handle disconnections
+  </script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
